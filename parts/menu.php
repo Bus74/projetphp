@@ -7,17 +7,35 @@
         <a class="navbar-brand" href="#">LessWheels</a>
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="index.php">Accueil</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="articles-list.php">Articles</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="login.php">Connexion</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="register.php">Inscription</a>
-            </li>
+            <?php
+            
+            //Boutons si l'utilisateur n'est pas connecté
+            if(!isset($_SESSION['user'])){
+                ?>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.php">Connexion</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="register.php">Inscription</a>
+                </li>
+                <?php
+            } else {
+                ?>
+                <li class="nav-item">
+                    <a class="nav-link" href="logout.php">Déconnexion</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="profil.php">Profil</a>
+                </li>
+                <?php
+            }
+            
+            ?>
         </ul>
         <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Chercher un article" aria-label="Search">

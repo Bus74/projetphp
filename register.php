@@ -1,4 +1,5 @@
 <?php
+session_start();
 //Inclusion de la fonction permettant de vérifier si un captcha est correct ou pas
 require 'recaptchavalid.php';
 // Appel des variables
@@ -84,7 +85,6 @@ if(
 
 <?php include'parts/menu.php'?>
 
-
 <?php
 
 // Si il y a des erreurs on les affiche
@@ -94,7 +94,7 @@ if (isset($errors)){
     }
 }
 
-// Si le message existe, on l'affiche, sinon on affichje le formuliare
+// Si le message existe, on l'affiche, sinon on affiche le formuliare
 if(isset($succesMessage)){
     echo '<p style="color:green;">' . ($succesMessage) . '</p>';
 }else{
