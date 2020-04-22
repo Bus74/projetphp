@@ -29,24 +29,24 @@ session_start();
 
         <div class="row">
             <div class="col-12">
-                <div class="card border-primary mb-3 col-10 offset-1">
-                    <div class="card-header">Header</div>
-                    <div class="card-body text-primary">
-                        <h5 class="card-title">Primary card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="card border-primary mb-3">
+                    <div class="card-header bg-primary text-white">Les voitures sans roues sont très apréciées des écolos</div>
+                    <div class="card-body ">
+                    <p class="card-text">C'est pas très étonnant ! Lorem ipsum dolor... </p>
                     </div>
+                <div class="card-footer text-muted">Le <strong>lundi 20 avril 2020 à 19h17</strong> par <strong>Alice</strong></div>
                 </div>
             </div>
         </div>
 
         <div class="row">
             <div class="col-12">
-                <div class="card border-success mb-3 col-10 offset-1">
-                <div class="card-header bg-transparent border-success">Sortie de la nouvelle Peugeot sans roues</div>
-                <div class="card-body text-success">
+                <div class="card border-primary mb-3">
+                <div class="card-header bg-primary text-white">Sortie de la nouvelle Peugeot sans roues</div>
+                <div class="card-body ">
                     <p class="card-text">La nouvelle Peugeot sans roues est enfin sortie !</p>
                 </div>
-                <div class="card-footer bg-transparent border-success">Le <strong>lundi 20 avril 2020 à 19h16</strong> par <strong>Alice</strong></div>
+                <div class="card-footer text-muted">Le <strong>lundi 20 avril 2020 à 19h16</strong> par <strong>Alice</strong></div>
                 </div>
             </div>
         </div>

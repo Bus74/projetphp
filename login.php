@@ -1,4 +1,5 @@
 <?php
+
 // nécessaire pour pouvoir utiliser les variables de session
 session_start();
 //Appel des variables
@@ -45,6 +46,7 @@ if(
                 $succesMessage = 'Vous etes bien connecté !';
                 // On créer un sous tableau 'user' dans la session. Dans ce tableau on y met le nom et le prenom envoyé par le formulaire
                     $_SESSION['user'] = $user;
+            /*if*/ 
             }else {
                 $errors[] = 'mot de passe incorrect';
             }
