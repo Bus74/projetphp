@@ -87,6 +87,14 @@ if(isset($succesMessage)){
     ?>
 
 
+<?php
+    if(isset($_SESSION['user'])){
+        echo 'Vous etes déjà connecté !';
+    }
+    else{
+?>
+      
+
 
 <!--Input en Bootstrap-->
 <div class="container-fluid">
@@ -119,6 +127,7 @@ if(isset($succesMessage)){
 </div>
 
 <?php
+}
 }
 ?>
 

@@ -100,6 +100,13 @@ if(isset($succesMessage)){
 }else{
     ?>
 
+<?php
+    if(isset($_SESSION['user'])){
+        echo 'Vous êtes déjà inscrit !';
+    }
+    else{
+    ?>
+
 
 <!--Input en Bootstrap-->
     <div class="container-fluid">
@@ -149,6 +156,7 @@ if(isset($succesMessage)){
         </div>
     </div>
     <?php
+}
 }
 ?>
     <script src="js/jquery-3.4.1.min.js"></script>

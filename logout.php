@@ -27,12 +27,14 @@ if(isConnected()){
 
     <?php 
 
+
   //si l'utilisateur est connecté, on affiche un message confirmant la déconnexion, sinon message d'erreur
     if(isset($succes)){
         echo '<p style="color:green;">Vous avez été bien déconnecté !</p>';
     }else {
         echo '<p style="color:red;">Vous êtes déjà déconnecté !</p>';
     }
+
     ?>
  
 
