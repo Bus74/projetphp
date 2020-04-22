@@ -33,9 +33,22 @@
                     <a class="nav-link" href="profil.php">Profil</a>
                 </li>
                 <?php
+                // Boutons pour admins
+                if($_SESSION['user']['admin'] == 1){
+                    ?>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="insert.php">Ajouter Article</a>
+                    </li>
+                    <?php
+                }
+
+
             }
-            
+            /*Bouton si admin est connecté
+            if(isset($_SESSION['admin']))
+                */ 
             ?>
+            
         </ul>
         <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Chercher un article" aria-label="Search">
@@ -47,3 +60,6 @@
     </div>
         </nav>
 </nav>
+
+
+
